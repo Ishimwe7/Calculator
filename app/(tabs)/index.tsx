@@ -56,16 +56,6 @@ const Calculator: React.FC = () => {
         contentContainerStyle={{ alignItems: 'center' }}
         ref={scrollViewRef}
       >
-         {input.split('').map((char, index) => (
-          <Text
-            key={index}
-            style={[
-              styles.inputText,
-            ]}
-          >
-            {char}
-          </Text>
-        ))}
         <Text style={styles.inputText}>{input}</Text>
       </ScrollView>
       <View style={styles.row}>
